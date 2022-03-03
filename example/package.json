@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "i18n": {
+    "messages": "./messages.ts",
+    "languages": [
+      "en",
+      "de"
+    ]
+  },
+  "dependencies": {
+    "@variocube/i18n": "file:.."
+  }
+}
