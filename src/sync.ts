@@ -19,7 +19,7 @@ function findPackages(dir: string) {
         if (file.name == "package.json") {
             packageJsons.push(join(dir, file.name));
         }
-        else if (file.isDirectory()) {
+        else if (file.isDirectory() && file.name != "node_modules") {
             packageJsons.push(...findPackages(join(dir, file.name)));
         }
     }
