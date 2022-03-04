@@ -3,7 +3,7 @@
  * @see navigator.languages
  */
 export function getNavigatorLanguages() {
-    if (navigator) {
+    if (typeof navigator != "undefined") {
         return navigator.languages || [navigator.language || (navigator as any).userLanguage];
     }
 }
