@@ -55,6 +55,15 @@ export class Messages<L extends Language, M extends MultiLingualMessages<L>> {
     }
 
     /**
+     * Returns whether the specified language is supported.
+     * @param language
+     */
+    isSupportedLanguage(language: Language) {
+        const l = this.sanitizeLanguage(language);
+        return Boolean(this.map.get(l) || this.map.get(this.getLanguageOfLocale(l)));
+    }
+
+    /**
      * Returns the messages for the specified language.
      * @param language
      */

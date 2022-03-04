@@ -1,6 +1,6 @@
 {
   "name": "@variocube/i18n",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Internationalization library",
   "main": "esm/index.js",
   "type": "module",
